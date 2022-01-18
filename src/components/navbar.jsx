@@ -1,40 +1,28 @@
-import react from "react";
-
-class Navbar extends react.Component {
-    render() {
-        const customstyle = {
-            backgroundcolor: "red",
-            padding: 5,
-            color: "black",     
-            fontsize: 20,      
-        }
+function Navbar () {
         return (
-            <nav style={customstyle}>
-                <div className="container-fluid">
-                    <a className="navbar-brand" href="#">Transportando Aroma</a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav">
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Nosotros</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Productos</a>
-                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Preguntas Frecuentes</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+            <nav className="navbar navbar-expand-lg navbar-light">
+            <div className="container-fluid">
+                <ul className="navbar-nav">
+                <img src="../img/velas" alt="logo" />    
+                  <li className="nav-item">
+                    <link to="../html/nosotros.html">Nosotros</link>
+                  </li>
+                  <li className="nav-item">
+                    <link to="../html/productos">Productos</link>
+                  </li>
+                  <li className="nav-item">
+                    <link to="../html/preguntasfrecuentes.html">Preguntas Frecuentes</link>
+                  </li>
+                  <li className="nav-item">
+                    <link to="../html/contacto.html">Contacto</link>
+                  </li>
+                </ul>
+                <Link to="/cart">
+                 <CartWidget />
+                </Link>
+            </div>
+          </nav>
         )
-    }
 }        
 
 export default Navbar;

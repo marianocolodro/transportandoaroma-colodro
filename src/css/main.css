@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap");
+.textNav {
+  color: #58555A;
+  text-decoration: none; }
+
+.logo {
+  width: 100px;
+  height: 100px; }
+
+.textCenter {
+  color: #000000;
+  text-align: center; }
+
+.itemsCenter {
+  justify-content: center; }
+
+/* Media Query */
+@media only screen and (min-width: 320px) {
+  h1 {
+    text-align: center; }
+  p {
+    text-align: center; }
+  .card {
+    justify-content: center; }
+  body {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center; }
+  h2 {
+    text-align: center; } }
+
+@media only screen and (min-width: 768px) {
+  .card {
+    justify-content: center; }
+  h1 {
+    text-align: center; }
+  p {
+    text-align: center; }
+  h2 {
+    text-align: center; } }
+
+nav {
+  background-color: #000000;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px; }
+    nav ul li {
+      list-style-type: none; }
+      nav ul li a {
+        font-size: 18px;
+        text-decoration: none;
+        margin-right: 4rem; }
+
+nav ul li a:hover {
+  cursor: pointer; }
+
+nav div a img:hover {
+  transform: rotate(-15deg);
+  cursor: pointer; }
+
+body {
+  background-color: #58555A; }
+
+.carousel {
+  height: 400px; }
+
+.imgCarousel {
+  height: 400px; }
+
+.map {
+  align-items: center; }
+
+p {
+  font-family: 'Caveat', cursive;
+  font-size: 125%; }
+
+h1 {
+  padding: 5px;
+  margin: 5px;
+  font-family: 'Caveat', cursive;
+  animation-name: aparecer;
+  animation-duration: 2s; }
+
+h2 {
+  font-family: 'Caveat', cursive; }
+
+h3 {
+  font-family: 'Caveat', cursive; }
+
+h5 {
+  font-family: 'Caveat', cursive; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.redes {
+  padding: 10px;
+  margin: 10px;
+  width: 70px;
+  height: 70px; }
+
+.redesFooter {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.preguntasfrecuentes {
+  background-color: #FBF37C; }
+
+.preguntasBlack {
+  color: #FFFFFF;
+  background-color: #000000; }
+
+.marginPadding {
+  padding: 15px;
+  margin: 15px; }
