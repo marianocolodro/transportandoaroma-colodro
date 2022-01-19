@@ -1,7 +1,7 @@
-function CartWidget () {
+function Cartwidget () {
         return (
-            <img className="logo" src="../img/cart" alt="íconoCart" />
+            <img className="logo" src="../img/cart.png" alt="íconoCart" />
         )
 }        
 
-export default CartWidget
+export default Cartwidget

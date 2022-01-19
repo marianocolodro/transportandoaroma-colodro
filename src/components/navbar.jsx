@@ -1,25 +1,25 @@
+import Cartwidget from "./Cartwidget";
+
 function Navbar () {
         return (
-            <nav className="navbar navbar-expand-lg navbar-light">
-            <div className="container-fluid">
-                <ul className="navbar-nav">
-                <img src="../img/velas" alt="logo" />    
-                  <li className="nav-item">
-                    <link to="../html/nosotros.html">Nosotros</link>
+            <nav className="nav">
+            <div>
+                <ul className="nav ul">
+                <img className="nav div a img" src="../img/velas.png" alt="logo" />    
+                  <li className="nav ul li">
+                    <a className="nav ul li a textNav" href="../html/nosotros.html">Nosotros</a>
                   </li>
-                  <li className="nav-item">
-                    <link to="../html/productos">Productos</link>
+                  <li className="nav ul li">
+                    <a className="nav ul li a textNav" href="../html/productos">Productos</a>
                   </li>
-                  <li className="nav-item">
-                    <link to="../html/preguntasfrecuentes.html">Preguntas Frecuentes</link>
+                  <li className="nav ul li">
+                    <a className="nav ul li a textNav" href="../html/preguntasfrecuentes.html">Preguntas Frecuentes</a>
                   </li>
-                  <li className="nav-item">
-                    <link to="../html/contacto.html">Contacto</link>
+                  <li className="nav ul li">
+                    <a className="nav ul li a textNav" href="../html/contacto.html">Contacto</a>
                   </li>
                 </ul>
-                <Link to="/cart">
-                 <CartWidget />
-                </Link>
+                 <Cartwidget />
             </div>
           </nav>
         )
