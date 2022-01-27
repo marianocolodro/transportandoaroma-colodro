@@ -2,15 +2,12 @@ import './App.css';
 import NavBar from './components/NavBar';
 import './css/main.css';
 import ItemListContainer from './components/ItemListContainer';
-import ItemCount from './components/ItemCount';
-import Item from './components/Item';
 
 function App() {
   return (
     <div className="App">
     <NavBar />
     <ItemListContainer />
-    <Item />
       <header className="App-header">
         <h1>
           Transportando Aroma
@@ -23,7 +20,6 @@ function App() {
         >
         </a>
       </header>
-      <ItemCount />
     </div>
   );
 }
