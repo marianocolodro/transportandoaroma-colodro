@@ -5,7 +5,7 @@ const ItemList = () => {
     const itemListStyle = {
         display: 'flex',
         flexWrap: 'wrap',
-        justifyContent: 'center',
+        justifyContent: "center",
         maxWidth: 1200,
         margin: 'auto'
     }
