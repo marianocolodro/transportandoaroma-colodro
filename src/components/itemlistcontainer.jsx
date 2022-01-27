@@ -1,7 +1,9 @@
-function Itemlistcontainer () {
+import ItemListPromise from "./ItemList"
+
+function ItemListContainer () {
     return (
-    <h1 className="h1">Transportando Aroma</h1>
+        ItemListPromise
     )
 }
 
-export default Itemlistcontainer
+export default ItemListContainer

@@ -1,23 +1,16 @@
-import React, { useState } from 'react';
+import { useState } from "react";
 
-const [clicks, setclicks] = useState(0);
-
-const addclick = () => {
-    setclicks(clicks + 1);
-    stock =  5
-    if (clicks = stock) {
-        alert ("No hay más stock de este producto");
-    }
-}    
-
-function Itemcount () {
+function ItemCount () {
+const [itemsQty, setItemsQty] = useState(1);
+const [stock, setStock] = useState(10)    
 return (
     <div>
-        <button type="button" onclick={addclick}>Añadir al carrito</button>
-        <br />
-        <span style={{ color: "grey" }}>Productos en el carrito {clicks}</span>
+        <button onClick={() => itemsQty > 1 ? setItemsQty(itemsQty - 1) : null}> - </button>
+        <button onClick={() => stock > itemsQty ? setItemsQty(itemsQty + 1) : null} > + </button>
+        <h1> {itemsQty} </h1>
     </div>
 )
+
 }
 
-export default Itemcount
+export default ItemCount;

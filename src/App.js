@@ -1,31 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar';
+import NavBar from './components/NavBar';
 import './css/main.css';
-import Itemlistcontainer from './components/Itemlistcontainer';
-import Itemcount from './components/Itemcount'
+import ItemListContainer from './components/ItemListContainer';
+import ItemCount from './components/ItemCount';
+import Item from './components/Item';
 
 function App() {
   return (
     <div className="App">
-    <Navbar />
-    <Itemcount />
-    <Itemlistcontainer />
+    <NavBar />
+    <ItemListContainer />
+    <Item />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <h1>
           Transportando Aroma
-        </p>
+        </h1>
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
         </a>
       </header>
-
+      <ItemCount />
     </div>
   );
 }

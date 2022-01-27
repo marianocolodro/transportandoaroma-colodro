@@ -1,11 +1,12 @@
-import Cartwidget from "./Cartwidget";
+import CartWidget from "./CartWidget";
+import Image from "../img/velas.png";
 
-function Navbar () {
+function NavBar () {
         return (
             <nav className="nav">
             <div>
                 <ul className="nav ul">
-                <img className="nav div a img" src="../img/velas.png" alt="logo" />    
+                <img className="logo nav div a img" src= {Image} alt="logo" />    
                   <li className="nav ul li">
                     <a className="nav ul li a textNav" href="../html/nosotros.html">Nosotros</a>
                   </li>
@@ -19,10 +20,10 @@ function Navbar () {
                     <a className="nav ul li a textNav" href="../html/contacto.html">Contacto</a>
                   </li>
                 </ul>
-                 <Cartwidget />
+                <CartWidget />
             </div>
           </nav>
         )
 }        
 
-export default Navbar;
+export default NavBar;
