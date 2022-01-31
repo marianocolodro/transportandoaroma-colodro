@@ -1,10 +1,10 @@
 import '../css/main.css';
 import ItemListContainer from './ItemListContainer';
 
-function Catálogo() {
+function Catalogo() {
     return (
         <ItemListContainer />
     );
 }
 
-export default Catálogo;
+export default Catalogo;
