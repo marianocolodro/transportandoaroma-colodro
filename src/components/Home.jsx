@@ -1,11 +1,9 @@
-import NavBar from './NavBar';
 import '../css/main.css';
 import ItemListContainer from './ItemListContainer';
 
 function Home() {
   return (
     <div className="App">
-    <NavBar />
     <ItemListContainer />
       <header className="App-header">
         <h1>

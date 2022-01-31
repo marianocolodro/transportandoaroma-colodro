@@ -1,22 +1,30 @@
-import ItemDetail from './ItemDetail';
-import productos from './Productos';
+import ItemDetail from "./ItemDetail";
+import productos from "./Productos";
+import { useState, useEffect } from "react";
 
 const ItemDetailContainer = () => {
-    const ItemDetailPromise = new Promise ((resolve, reject) => {
-        setTimeout(() => {
-            resolve(productos)
-        }, 2000);  
+  const [productoDetalle, setProductoDetalle] = useState([]);
+
+  useEffect(() => {
+    const getItem = new Promise((res, rej) => {
+      setTimeout(() => {
+        if (productoDetalle) {
+          res(productos.filter((prod) => prod.id === 1));
+        } else {
+          rej(console.log("Producto no encontrado"));
+        }
+      }, 2000);
     });
-    
-    ItemDetailPromise.then((value) => console.log(value))
-    .catch((reason) => console.log("Ocurrió un error"))
-    .finally((info) => console.log("Finalizó el proceso"))
-    
-    return (
-        <div>
-            <ItemDetail/>
-        </div>
-    )
-}
+    getItem.then((prod) => {
+      setProductoDetalle(prod);
+    });
+  });
+
+  return (
+    <div>
+      <ItemDetail productoDetalle={productoDetalle} />
+    </div>
+  );
+};
 
 export default ItemDetailContainer;
