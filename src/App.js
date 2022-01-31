@@ -10,6 +10,7 @@ function App() {
   <NavBar />
     <Routes>
       <Route path="/" element= {<Home/>}/>
+      <Route path= "/producto/:id" element= {<ItemDetailContainer/>}/>
       <Route path="*" element= {<NoPage/>}/>
     </Routes>
   </BrowserRouter>  
