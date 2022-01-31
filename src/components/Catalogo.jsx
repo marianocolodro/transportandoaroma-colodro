@@ -3,7 +3,9 @@ import ItemListContainer from './ItemListContainer';
 
 function Catalogo() {
     return (
-        <ItemListContainer />
+        <div>
+            <ItemListContainer/>
+        </div>
     );
 }
 

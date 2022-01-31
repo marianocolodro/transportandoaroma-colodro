@@ -3,15 +3,18 @@ import { BrowserRouter, Route, Routes} from 'react-router-dom'
 import Home from './components/Home';
 import NoPage from'./components/NoPage';
 import NavBar from './components/NavBar';
+import ItemDetailContainer from './components/ItemDetailContainer';
+import Catalogo from './components/Catalogo';
 
 function App() {
   return (
   <BrowserRouter>
   <NavBar />
     <Routes>
-      <Route path="/" element= {<Home/>}/>
-      <Route path= "/producto/:id" element= {<ItemDetailContainer/>}/>
+      <Route path="/" index element= {<Home/>}/>
+      <Route path="/Catalogo" element= {<Catalogo/>}/>
       <Route path="*" element= {<NoPage/>}/>
+      <Route path="/producto/:id" element= {<ItemDetailContainer/>}/>
     </Routes>
   </BrowserRouter>  
   );
