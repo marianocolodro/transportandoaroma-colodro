@@ -1,17 +1,21 @@
-import CartWidget from "./CartWidget";
-import Image from "../img/velas.png";
+import CartWidget from './CartWidget';
+import Image from '../img/velas.png';
+import {Link} from 'react-router-dom';
+import { Navbar } from 'react-bootstrap';
+import Home from './Home';
+import Catálogo from './catálogo';
 
 function NavBar () {
         return (
             <nav className="nav">
             <div>
                 <ul className="nav ul">
-                <img className="logo nav div a img" src= {Image} alt="logo" />    
+                <Link to={"/Home"}><Navbar.Brand href='#home'><img className="logo nav div a img" src= {Image} alt="logo" /></Navbar.Brand></Link>    
                   <li className="nav ul li">
                     <a className="nav ul li a textNav" href="../html/nosotros.html">Nosotros</a>
                   </li>
                   <li className="nav ul li">
-                    <a className="nav ul li a textNav" href="../html/productos">Productos</a>
+                  <Link to={"/catálogo"} href="#catálogo">Catálogo</Link>
                   </li>
                   <li className="nav ul li">
                     <a className="nav ul li a textNav" href="../html/preguntasfrecuentes.html">Preguntas Frecuentes</a>
@@ -20,7 +24,7 @@ function NavBar () {
                     <a className="nav ul li a textNav" href="../html/contacto.html">Contacto</a>
                   </li>
                 </ul>
-                <CartWidget />
+                <CartWidget/>
             </div>
           </nav>
         )

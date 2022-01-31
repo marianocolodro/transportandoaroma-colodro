@@ -2,7 +2,7 @@ import cart from "../img/cart.png"
 
 function CartWidget () {
         return (
-            <img className="logo" src={cart} alt="íconoCart" />
+            <img style={{width: "50px"}} src={cart} alt="íconoCart" />
         )
 }        
 

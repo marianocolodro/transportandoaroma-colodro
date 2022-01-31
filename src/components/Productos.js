@@ -1,12 +1,12 @@
-import setfuego from "../img/setfuego.jfif"
-import setagua from "../img/setagua.jfif"
-import setaire from "../img/setaire.jfif"
-import settierra from "../img/settierra.jfif"
-import velaspastillero from "../img/velaspastillero.jfif"
-import constelaciones from "../img/constelaciones.jfif"
-import velaschakras from "../img/velaschakras.jfif"
-import sietechakras from "../img/7chakras.jfif"
-import createUtilityClassName from "react-bootstrap/esm/createUtilityClasses"
+import setfuego from '../img/setfuego.jfif';
+import setagua from '../img/setagua.jfif';
+import setaire from '../img/setaire.jfif';
+import settierra from '../img/settierra.jfif';
+import velaspastillero from '../img/velaspastillero.jfif';
+import constelaciones from '../img/constelaciones.jfif';
+import velaschakras from '../img/velaschakras.jfif';
+import sietechakras from '../img/7chakras.jfif';
+import createUtilityClassName from 'react-bootstrap/esm/createUtilityClasses';
 
 const productos = [
     {id: "1", nombre: "🔥 Set Fuego 🔥", texto: "Aries - Sagitario - Leo<br>Para este set elegimos aromas intensos y seductores, todos acompañados de su constelación o sus características generales de cada signo<br>Frasco: $400 c/u<br>Pastillero: $300 c/u", precio: 300, stock: 8, img: setfuego},

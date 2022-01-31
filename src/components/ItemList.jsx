@@ -1,5 +1,6 @@
-import productos from "./Productos"
-import Item from "./Item"
+import productos from './Productos';
+import Item from './Item';
+import { Breadcrumb, Button, Card, Col, Container, Row } from 'react-bootstrap';
 
 const ItemList = () => {
     const itemListStyle = {
@@ -20,9 +21,15 @@ const ItemList = () => {
     .finally((info) => console.log("Finalizó el proceso"))
     
     return (
-        <ul style={{itemListStyle}}>
-            {productos.map((producto) => <li><Item key={producto.id} producto={producto}/></li>)}
-        </ul>
+        <Container>
+            <Row>
+                <Col lg={12}>
+                    <ul style={{itemListStyle}}>
+                        {productos.map((producto) => <li><Item key={producto.id} producto={producto}/></li>)}
+                    </ul>
+                </Col>
+            </Row>    
+        </Container>
     )
 }
 
